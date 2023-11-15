@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+  <!-- type burada kutucuğun içindeki işlemin ne olacağını belirler. -->
+    <form> 
+     <P>
+        Ad: <input type="text" name="text">
+    </P>
+    <p>
+       Soyad:  <input type="text" name="text">
+    </p>
+    <p>
+        Eposta: <input type="email" name="email">
+    </p>
+    <p>
+        Parola: <input type="password" name="password">
+    </p>
+    <p>
+        Parolayi Hatirla <input type="checkbox" name="parolahatirla">
+    </p>
+    <!-- radio butonu yuvarlaktır ve name eklersek sadece bir seçenek seçilir -->
+    <p>
+        Cinsiyet: 
+        Erkek <input type="radio" name="cinsiyet">
+        Kadin <input type="radio" name="cinsiyet">
+    </p>
+    <p>
+        Hobileriniz: <br>
+      Kitap Okumak <input type="checkbox" name="hobi" id="">
+      Spor Yapmak <input type="checkbox" name="hobi" id="">
+      Film-Dizi İzlemek <input type="checkbox" name="hobi" id="">
+    </p>
+    <p>
+        Dogumyeri: <br>
+    <select name="dogumyeri" >
+        <option>Seçiniz</option>
+        <option>Eskişehir</option>
+        <option>İstanbul</option>
+        <option>İzmir</option>
+    </select>
+    </p>
+    <!-- birden fazla seçenek olursa -->
+    <p>
+        Dogumyeri: <br>
+    <select multiple name="dogumyeri" >
+        <option>Seçiniz</option>
+        <option>Eskişehir</option>
+        <option>İstanbul</option>
+        <option>İzmir</option>
+    </select>
+    </p>
+
+    </form>
+
+</body>
+</html>
