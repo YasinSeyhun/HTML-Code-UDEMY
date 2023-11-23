@@ -1,0 +1,44 @@
+/* 
+(p) --> Tüm p etiketleri
+(div p) --> div içerisindeki tüm p etiketleri
+(div,p) --> tüm div ve tüm p etiketleri
+(p+div) --> p etiketinden sonra gelen div etiketi
+*/
+
+/* 1.
+p{
+    color: red;
+}
+*/
+
+/* 2. 
+div p {
+    color: red;
+}
+*/
+
+/* 
+.container div {
+    color: royalblue;
+}
+ */
+/* 
+ div p {
+    color: pink;
+ }
+  */
+/* tüm div ve tüm p ler kırmızı olacak. */
+ div , p {
+    color:red;
+ }
+
+ /* div den sonra gelen p etiketi pembe olsun istersek */
+
+ div + p {
+    color: pink;
+ }
+ /* p den sonra div etiketi mavi olsun istersek */
+ 
+ p+div{
+    color: blue;
+ }

@@ -1,0 +1,53 @@
+/* Pseudo Elements */
+/* local elementler için kullanılır */
+p::first-line{
+    /* kalın yazmak için */
+    font-weight: bold;
+    color: darkred;
+    /* kelimeler arası boşluk */
+    word-spacing: 2px;
+    /* harfler arası boşluk */
+    letter-spacing: normal;
+}
+
+p::first-letter{
+    font-size: 50px;
+}
+
+/* Pseudo Class */
+/* daha komple yapi olan yapilar oldu[unda kullaniriz */
+ ul li{
+    /* hizalamak için */
+    padding: 10px;/* arasındaki boşluk */
+    margin-bottom: 10px;
+ }
+
+ ul li:first-child{
+    background-color: darkred;
+
+ }
+ ul li:last-child{
+    background-color: blue;
+ }
+ ul li:hover{
+    color: white;
+    background: black;
+ }
+
+ a:visited{
+    /* ziyater edilmiş link rengi*/
+    color: fuchsia;
+ }
+ a:hover{
+    /* üzerine geldiğimizde ne olacak ? */
+    color: white;
+    background:black ;
+ }
+
+ a{
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+ }

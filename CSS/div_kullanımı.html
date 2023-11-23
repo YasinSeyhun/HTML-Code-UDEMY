@@ -1,0 +1,61 @@
+<!-- sayfalarda bölmeler oluşturmak için div kullanılır -->
+<!-- divler sayfa oluştururken çok kullanılır. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div KULLANIMI</title>
+
+    <style>
+        #div1{
+            color: white;
+            text-align: center;
+            font-size: medium;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+            width: 50%;
+            height: 100%;
+            /* yazılar sığmazsa  */
+            /* overflow: scroll;*/
+            float: left;
+            overflow: auto;
+        }
+        #div2{
+            color: darkred;
+            background-color:cornsilk;
+            width: 50%;
+            height: 100%;
+            float: right;
+            overflow: auto;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1">
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+      <ul>
+        <li>Madde 1</li>
+        <li>Madde 2</li>
+        <li>Madde 3</li>
+      </ul>
+
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum,
+        delectus assumenda aliquam eum facere ipsam error possimus fuga quod.
+        Magni.
+      </p>
+    </div>
+    <div id="div2">
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum,
+        delectus assumenda aliquam eum facere ipsam error possimus fuga quod.
+        Magni.
+      </p>
+    </div>
+  </body>
+</html>
