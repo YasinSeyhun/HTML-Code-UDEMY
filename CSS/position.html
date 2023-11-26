@@ -1,0 +1,62 @@
+<!-- position 5 başlıktan oluşur. -->
+<!-- static = varsayılan olarak verilen değer-->
+<!-- relative = left right top(üst) bottom(alt) bir üstündeki div i esas alır-->
+<!-- fixed =left right top(üst) bottom(alt) sayfa scroll şekilde aşağı yukarı veya sağ sol oynasa bile div her zaman sayfa ile hareket eder.-->
+<!-- absolute = left right top(üst) bottom(alt) sayfanın başlangıç noktasını esas alır-->
+<!-- sticky = left right top(üst) bottom(alt) sayfa hareket bile etkilenmez.(menüler için kullanılabilir.)-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+  </head>
+
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+    }
+    #box1 {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background-color: lightpink;
+    }
+    #box2 {
+      position: absolute;
+      top: 50px;
+      left: 65px;
+      background-color: lightseagreen;
+    }
+    #box3 {
+      position: relative;
+      top: 50px;
+      left: 55px;
+      background-color: lightskyblue;
+    }
+    #box4 {
+      background-color: brown;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    #menu {
+      background-color: black;
+      position: sticky;
+      top: 0;
+      width: auto;
+    }
+  </style>
+  <body>
+    <div id="menu">
+      <p style="color: aliceblue">menu</p>
+    </div>
+    <div class="box" id="box1">BOX1</div>
+    <div class="box" id="box2">BOX2</div>
+    <div class="box" id="box3">BOX3</div>
+    <div class="box" id="box4">BOX4</div>
+
+    <div style="height: 30000px"></div>
+  </body>
+</html>

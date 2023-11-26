@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>margin</title>
+  </head>
+
+  <style>
+    body{
+        margin: 0;
+    }
+    .box {
+      width: 150px;
+      height: 150px;
+      float: left;
+      margin: 10px 20px 30px 40px;
+      /*marginde boşluklar saat yönünde olup top tan başlar.  */
+      /* marginde auto özelliği verirsek otomatik olarak sayfanın ortasında olur.*/
+    }
+    #box1 {
+      background-color: lightpink;
+    }
+    #box2 {
+      background-color: lightseagreen;
+    }
+    #box3 {
+      background-color: lightskyblue;
+    }
+    #box4 {
+      background-color: brown;
+    }
+    #menu {
+      background-color: black;
+    }
+    span{
+        margin: 30px;
+        display: inline-block;
+    }
+  </style>
+  <body>
+    <div id="menu">
+      <menu style="color: aliceblue">menu</p>
+    </div>
+    <div class="box" id="box1">BOX1</div>
+    <div class="box" id="box2">BOX2</div>
+    <div class="box" id="box3">BOX3</div>
+    <div class="box" id="box4">BOX4</div>
+
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+  </body>
+</html>
