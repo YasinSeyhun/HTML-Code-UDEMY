@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text</title>
+
+    <style>
+        div{
+            width: 800px;
+            height: 300px;
+            border: 2px solid black;
+        }
+        p{
+            font-size: 22px;
+            text-align: center;
+            /* harfler arası boşluk */
+            letter-spacing: 2px; 
+            /* kelimeler arası boşluk */
+            word-spacing: 3px;
+            /* satırlar arası boşluk */
+            line-height: 150%;
+        }
+        h2{
+            /* ilk harf özelleştirmesi*/
+            text-transform: uppercase;
+        }
+        span{
+            font-style: italic;
+            color: red;
+        }
+        a{
+            font-size: small;
+            font-style: inherit;
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum,
+        accusantium quaerat nam <span> recusandae </span> quasi, animi quia vitae in cupiditate
+        praesentium consequatur omnis? Nihil nesciunt tenetur quae et <a class="link" href="www.google.com"> molestiae </a>
+        iusto excepturi?
+      </p>
+    </div>
+  </body>
+</html>

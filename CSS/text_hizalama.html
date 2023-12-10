@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Hizalama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Lora", serif;
+        width: 900px;
+        margin: 40px auto;
+      }
+
+      #paragraf1 {
+        text-align: center;
+      }
+      #paragraf2 {
+        text-align: left;
+      }
+      #paragraf3 {
+        text-align: right;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        /* sütuna bölme */
+        column-count: 3;
+        /* safari ve mozillada çalışması için */
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+
+        column-rule: 2px solid black;
+        -webkit-column-rule: 2px solid black;
+        -moz-column-rule: 2px solid black;
+      }
+      #paragraf4{
+        /* her iki yana yaslamak */
+        text-align: justify;
+        /* ilk kelimenin boşluğu */
+        text-indent: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+    <p id="paragraf1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sint
+      nostrum labore, corrupti voluptate porro repellendus mollitia ullam iure,
+      dolorum at recusandae non quia qui accusamus vel. Voluptatibus, magni
+      temporibus.
+    </p>
+    <p id="paragraf2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sint
+      nostrum labore, corrupti voluptate porro repellendus mollitia ullam iure,
+      dolorum at recusandae non quia qui accusamus vel. Voluptatibus, magni
+      temporibus.
+    </p>
+    <p id="paragraf3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sint
+      nostrum labore, corrupti voluptate porro repellendus mollitia ullam iure,
+      dolorum at recusandae non quia qui accusamus vel. Voluptatibus, magni
+      temporibus.
+    </p>
+
+    <p id="paragraf4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quae ut
+      accusamus nesciunt iste dolorum modi. Possimus soluta quod dicta ut sed
+      commodi, dolorum consequatur et cupiditate placeat dolor facere?
+    </p>
+  </body>
+</html>
