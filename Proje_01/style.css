@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem; /* 1.6 çarpan gibi oran-orantı sağlıyor*/
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333; 
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    padding: 1.6rem 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    height: 46rem; /* 460px e denk geliyor */
+}
+header .bg-image {
+    position: absolute;
+    background-image: url(images/bg.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+ header h1{
+    padding: 22rem;
+    padding-bottom: 0;
+ }
+
+ .btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    /* animasyonlu */
+    transition: all 0.4s;
+ }
+ .btn:hover{
+    background-color: #fff;
+    color: #333;
+ }
+
+#section-a {
+    background-color: #fff;
+    color: #000;
+    padding: 1.6rem;
+}
+section-b ul{
+    list-style: none;
+}
+section-b li{
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+.col-content {
+    padding: 1.5rem;
+}
