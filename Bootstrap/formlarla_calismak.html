@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Scrollbar'ı gizlemek için */
+      select {
+        /* Webkit tabanlı tarayıcılarda scrollbar gizleme */
+        /* Diğer tarayıcılar için farklı yaklaşımlar gerekebilir */
+        scrollbar-width: none; /* Firefox için */
+        -ms-overflow-style: none; /* Internet Explorer için */
+      }
+
+      /* Diğer tarayıcılara özgü scrollbar'ı gizleme */
+      /* Tarayıcı uyumluluğunu sağlamak için farklı özellikler kullanabilirsin */
+      /* Örnek olarak Chrome için WebKit tabanlı tarayıcılar */
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        select {
+          /* Chrome, Safari, Opera gibi Webkit tabanlı tarayıcılarda scrollbar gizleme */
+          /* Bu özellikler tarayıcı sürümlerine göre değişebilir */
+          ::-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="form-group">
+        <label for="name">Adınız:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Adınızı giriniz"
+        />
+      </div>
+      <div class="form-group mt-3">
+        <label for="Surname">Soyadınız:</label>
+        <input
+          type="text"
+          name="surname"
+          id="surname"
+          class="form-control"
+          placeholder="Soyadınızı giriniz"
+        />
+      </div>
+      <div class="form-group mt-3">
+        <label for="email">Email Adresiniz:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Email Adresinizi giriniz"
+        />
+        <small class="form-text text-muted mt-1"
+          >Email adresinizi girmek zorunludur.</small
+        >
+      </div>
+      <div class="form-group mt-3">
+        <label for="password">Parola:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="form-control"
+          placeholder="Parolanızı Giriniz"
+        />
+      </div>
+      <div class="form-group mt-4">
+        <label for="city">Doğum Yeriniz:</label>
+        <select id="city" name="city" class="form-control">
+          <option value="0">Seçiniz:</option>
+          <option value="1">Adana</option>
+          <option value="2">Adıyaman</option>
+          <option value="3">Afyonkarahisar</option>
+          <option value="4">Ağrı</option>
+          <option value="5">Amasya</option>
+          <option value="6">Ankara</option>
+          <option value="7">Antalya</option>
+          <option value="8">Artvin</option>
+          <option value="9">Aydın</option>
+          <option value="10">Balıkesir</option>
+          <option value="11">Bilecik</option>
+          <option value="12">Bingöl</option>
+          <option value="13">Bitlis</option>
+          <option value="14">Bolu</option>
+          <option value="15">Burdur</option>
+          <option value="16">Bursa</option>
+          <option value="17">Çanakkale</option>
+          <option value="18">Çankırı</option>
+          <option value="19">Çorum</option>
+          <option value="20">Denizli</option>
+          <option value="21">Diyarbakır</option>
+          <option value="22">Edirne</option>
+          <option value="23">Elazığ</option>
+          <option value="24">Erzincan</option>
+          <option value="25">Erzurum</option>
+          <option value="26">Eskişehir</option>
+          <option value="27">Gaziantep</option>
+          <option value="28">Giresun</option>
+          <option value="29">Gümüşhane</option>
+          <option value="30">Hakkari</option>
+          <option value="31">Hatay</option>
+          <option value="32">Isparta</option>
+          <option value="33">Mersin</option>
+          <option value="34">İstanbul</option>
+          <option value="35">İzmir</option>
+          <option value="36">Kars</option>
+          <option value="37">Kastamonu</option>
+          <option value="38">Kayseri</option>
+          <option value="39">Kırklareli</option>
+          <option value="40">Kırşehir</option>
+          <option value="41">Kocaeli</option>
+          <option value="42">Konya</option>
+          <option value="43">Kütahya</option>
+          <option value="44">Malatya</option>
+          <option value="45">Manisa</option>
+          <option value="46">Kahramanmaraş</option>
+          <option value="47">Mardin</option>
+          <option value="48">Muğla</option>
+          <option value="49">Muş</option>
+          <option value="50">Nevşehir</option>
+          <option value="51">Niğde</option>
+          <option value="52">Ordu</option>
+          <option value="53">Rize</option>
+          <option value="54">Sakarya</option>
+          <option value="55">Samsun</option>
+          <option value="56">Siirt</option>
+          <option value="57">Sinop</option>
+          <option value="58">Sivas</option>
+          <option value="59">Tekirdağ</option>
+          <option value="60">Tokat</option>
+          <option value="61">Trabzon</option>
+          <option value="62">Tunceli</option>
+          <option value="63">Şanlıurfa</option>
+          <option value="64">Uşak</option>
+          <option value="65">Van</option>
+          <option value="66">Yozgat</option>
+          <option value="67">Zonguldak</option>
+          <option value="68">Aksaray</option>
+          <option value="69">Bayburt</option>
+          <option value="70">Karaman</option>
+          <option value="71">Kırıkkale</option>
+          <option value="72">Batman</option>
+          <option value="73">Şırnak</option>
+          <option value="74">Bartın</option>
+          <option value="75">Ardahan</option>
+          <option value="76">Iğdır</option>
+          <option value="77">Yalova</option>
+          <option value="78">Karabük</option>
+          <option value="79">Kilis</option>
+          <option value="80">Osmaniye</option>
+          <option value="81">Düzce</option>
+        </select>
+      </div>
+
+      <div class="form-group mt-3">
+        <label for="message">Mesajınız:</label>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          class="form-control"
+        ></textarea>
+      </div>
+
+      <div class="mt-4">
+        <legend>Hobileriniz:</legend>
+
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" />Futbol
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" />Basketbol
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" />Tenis
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" />Yüzme
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" />Kitap Okumak
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" />Müzik Dinlemek
+          </label>
+        </div>
+        <div class="custom-control custom-checkbox mt-4">
+          <input type="checkbox" id="cb" class="custom-control-input" />
+          <label for="cb" class="custom-control-label">Checkbox</label>
+        </div>
+
+        <div class="custom-control custom-radio mt-4">
+          <input type="radio" id="rb" class="custom-control-input" />
+          <label for="rb" class="custom-control-label">RadioButton</label>
+        </div>
+
+        <div class="input-group mt-4">
+          <input type="text" class="form-control" />
+          <div class="input-group-append">
+            <span class="input-group-text" id="ig">@gmail.com</span>
+          </div>
+        </div>
+        <div class="input-group mt-4">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="ig">http://instagram.com/</span>
+          </div>
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
