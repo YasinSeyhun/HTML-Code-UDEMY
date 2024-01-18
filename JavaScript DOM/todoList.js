@@ -45,7 +45,7 @@ console.log(document.querySelector("div")); // etiket
 
 document.querySelector("li").style.color = "yellow";
 document.querySelector("li:last-child").style.color = "green";
-document.querySelector("li:nth-child(2)").style.color = "red";
+document.querySelector("li:nth-child(2)").style.color = "red";  // kaçıncı eleman ? 
 
 document.querySelector("li").className = "list-group-item list-group-item-danger"; // className değiştirerek özellik yeniledik.
 document.querySelector("li").classList.add = "active"; // class add
